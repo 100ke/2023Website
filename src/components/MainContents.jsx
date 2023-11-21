@@ -10,7 +10,7 @@ function MainContents() {
         <Container className='d-flex flex-column flex-lg-row'>
             <Row>
                 <Col lg={8} className='sec01'>
-                    <h3 className='mb-3 text-center'>최신 기사</h3>
+                    <h3 className='mb-3 text-center fw-bold'>최신 기사</h3>
                     <Row>
                         {
                             mainNews.map(function(item,i) {
@@ -20,7 +20,7 @@ function MainContents() {
                     </Row>
                 </Col>
                 <Col lg={4} className='sec02'>
-                    <h3 className='mb-3 text-center'>YouTube 핫클립</h3>
+                    <h3 className='mb-3 text-center fw-bold'>YouTube 핫클립</h3>
                     <Row>
                         <Col md={6} lg={12} className='YouTubeBox'>
                             <img src="./img/youtubeImg.png" alt="" />
@@ -34,7 +34,7 @@ function MainContents() {
                                             <div className='banner_inner'>
                                                 <p className='tag_text'>D라이브러리</p>
                                                 <p className='sub_text'>디스플레이 기술을 알기 쉽게 설명한</p>
-                                                <p className='title_text'>디스플레이 톺아보기 <MdNavigateNext /></p>
+                                                <p className='title_text'>디스플레이 톺아보기<MdNavigateNext /></p>
                                             </div>
                                             <div className="icon_art"><img src="./img/banner_1_icon.png" alt="" /></div>
                                         </a>
@@ -44,7 +44,7 @@ function MainContents() {
                                             <div className='banner_inner'>
                                                 <p className='tag_text'>D라이브러리</p>
                                                 <p className='sub_text'>디스플레이를 이해하는 중요한 방법!</p>
-                                                <p className='title_text'>디스플레이 용어알기 <MdNavigateNext /></p>
+                                                <p className='title_text'>디스플레이 용어알기<MdNavigateNext /></p>
                                             </div>
                                             <div className="icon_art"><img src="./img/banner_2_icon.png" alt="" /></div>
                                         </a>

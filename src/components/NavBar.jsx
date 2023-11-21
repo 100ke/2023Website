@@ -1,10 +1,12 @@
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
 import { IoMdMail } from "react-icons/io";
 import { FaFacebookF, FaYoutube, FaSearch } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { SlGlobe } from "react-icons/sl";
+import { useState } from 'react';
 
 function NavBar() {
+
     return (
         <Navbar collapseOnSelect expand="lg">
             <Container>
@@ -64,10 +66,10 @@ function NavBar() {
                         <Nav className="">
                             <div className='d-flex gap-2'>
                                 <Nav.Link href="#!"><IoMdMail /></Nav.Link>
-                                <Nav.Link href="#!"><FaFacebookF /></Nav.Link>
-                                <Nav.Link href="#!"><FaYoutube /></Nav.Link>
-                                <Nav.Link href="#!"><AiFillInstagram /></Nav.Link>
-                                <Nav.Link href="#!"><SlGlobe /></Nav.Link>
+                                <Nav.Link href="http://www.facebook.com/samsungDisplay"><FaFacebookF /></Nav.Link>
+                                <Nav.Link href="http://www.youtube.com/user/SamsungDisplayMedia/"><FaYoutube /></Nav.Link>
+                                <Nav.Link href="https://www.instagram.com/samsungdisplay_official/"><AiFillInstagram /></Nav.Link>
+                                <Nav.Link href="http://global.samsungdisplay.com/"><SlGlobe /></Nav.Link>
                             </div>
                         </Nav>
                         <div className='search d-none d-lg-block'>

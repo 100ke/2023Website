@@ -15,7 +15,7 @@ function PopularArticles() {
 
     return (
         <Container className='mb-5'>
-            <h3 className='mb-3 text-center'>인기 기사</h3>
+            <h3 className='mb-3 text-center fw-bold'>인기 기사</h3>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={10}
