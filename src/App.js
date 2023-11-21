@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header mb-3">
-      <NavBar/>
+        <NavBar/>
       </header>
       <div class="mb-5">
         <Container class="mainSlider"><Slider/></Container>

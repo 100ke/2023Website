@@ -14,7 +14,7 @@ function PopularArticles() {
     const [popNews] = useState(popArticleData)
 
     return (
-        <Container className='mb-3'>
+        <Container className='mb-5'>
             <h3 className='mb-3 text-center'>인기 기사</h3>
             <Swiper
                 slidesPerView={3}
