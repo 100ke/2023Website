@@ -6,13 +6,17 @@ import { SlGlobe } from "react-icons/sl";
 import { useState } from 'react';
 
 function NavBar() {
+    const [isActive, setIsActive] = useState(false);
+    function ModalView() {
+        setIsActive(!isActive)
+    }
 
     return (
         <Navbar collapseOnSelect expand="lg">
             <Container>
                 <Navbar.Brand href="#home"><img src="./img/logo.png" alt="" /></Navbar.Brand>
                 <div className='d-flex gap-2'>
-                    <div className='search d-block d-lg-none'>
+                    <div className='search d-block d-lg-none' onClick={ModalView}>
                         <a href="" className='searchBtn'>
                             <div className='searchIcon'><FaSearch /></div>
                         </a>
@@ -72,7 +76,7 @@ function NavBar() {
                                 <Nav.Link href="http://global.samsungdisplay.com/"><SlGlobe /></Nav.Link>
                             </div>
                         </Nav>
-                        <div className='search d-none d-lg-block'>
+                        <div className='search d-none d-lg-block' onClick={ModalView}>
                             <a href="" className='searchBtn'>
                                 <div className='searchIcon'><FaSearch /></div>
                             </a>
@@ -81,7 +85,28 @@ function NavBar() {
                 </Navbar.Collapse>
 
             </Container>
+            <SeachModal className={`${isActive ? 'view' : ''}`}/>
         </Navbar>
+    )
+}
+
+function SeachModal() {
+    return(
+        <>
+        <div className="bgWrap">
+            <div className="sModal">
+                <a href="./img/logo.png"><img src="" alt="" /></a>
+            </div>
+            <div class="wrap">
+                <form action="" class="form">
+                    <input type="text" name="search" placeholder="검색어를 입력해주세요" class="inp"/>
+                </form>
+                <div class="searchBtn">
+                    <p>검색</p>
+                </div>
+            </div>
+        </div>
+        </>
     )
 }
 

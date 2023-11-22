@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './SearchModal.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar.jsx';
 import Slider from './components/Slider.jsx';
